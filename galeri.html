@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto Medan - WisataMedan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galeri.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">WisataMedan</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="destinasi.html">Destinasi</a></li>
+                    <li><a href="kuliner.html">Kuliner</a></li>
+                    <li><a href="budaya.html">Budaya</a></li>
+                    <li><a href="akomodasi.html">Akomodasi</a></li>
+                    <li><a href="transportasi.html">Transportasi</a></li>
+                    <li><a href="galeri.html" class="active">Galeri</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Galeri Foto Medan</h1>
+            <p>Jelajahi keindahan Medan melalui koleksi foto-foto menakjubkan</p>
+        </div>
+    </section>
+
+    <!-- Filter Gallery -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-options">
+                <button class="filter-btn active" data-filter="semua">Semua</button>
+                <button class="filter-btn" data-filter="wisata">Tempat Wisata</button>
+                <button class="filter-btn" data-filter="kuliner">Kuliner</button>
+                <button class="filter-btn" data-filter="budaya">Budaya</button>
+                <button class="filter-btn" data-filter="alam">Pemandangan Alam</button>
+                <button class="filter-btn" data-filter="kota">Kota Medan</button>
+                <button class="filter-btn" data-filter="populer">Terpopuler</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Foto 1 -->
+                <div class="gallery-item" data-category="wisata populer">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1596436889106-be35e84330b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Istana Maimun">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Istana Maimun</h3>
+                                <p>Istana megah peninggalan Kesultanan Deli</p>
+                                <div class="photo-stats">
+                                    <span><i class="fas fa-heart"></i> 245</span>
+                                    <span><i class="fas fa-eye"></i> 1.2k</span>
+                                </div>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="action-btn like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="action-btn zoom-btn" data-image="https://images.unsplash.com/photo-1596436889106-be35e84330b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="action-btn share-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 2 -->
+                <div class="gallery-item" data-category="alam populer">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1627466173305-83c47baa5795?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Danau Toba">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Danau Toba</h3>
+                                <p>Danau vulkanik terbesar di dunia</p>
+                                <div class="photo-stats">
+                                    <span><i class="fas fa-heart"></i> 356</span>
+                                    <span><i class="fas fa-eye"></i> 2.1k</span>
+                                </div>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="action-btn like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="action-btn zoom-btn" data-image="https://images.unsplash.com/photo-1627466173305-83c47baa5795?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="action-btn share-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 3 -->
+                <div class="gallery-item" data-category="kuliner">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bika Ambon">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Bika Ambon</h3>
+                                <p>Kue tradisional khas Medan</p>
+                                <div class="photo-stats">
+                                    <span><i class="fas fa-heart"></i> 189</span>
+                                    <span><i class="fas fa-eye"></i> 890</span>
+                                </div>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="action-btn like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="action-btn zoom-btn" data-image="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="action-btn share-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 4 -->
+                <div class="gallery-item" data-category="budaya">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1547981609-4b6bf67b1293?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Masjid Raya Medan">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Masjid Raya Medan</h3>
+                                <p>Masjid bersejarah dengan arsitektur megah</p>
+                                <div class="photo-stats">
+                                    <span><i class="fas fa-heart"></i> 278</span>
+                                    <span><i class="fas fa-eye"></i> 1.5k</span>
+                                </div>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="action-btn like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="action-btn zoom-btn" data-image="https://images.unsplash.com/photo-1547981609-4b6bf67b1293?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="action-btn share-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 5 -->
+                <div class="gallery-item" data-category="kota">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Kota Medan Malam">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Kota Medan Malam</h3>
+                                <p>Pemandangan kota Medan di malam hari</p>
+                                <div class="photo-stats">
+                                    <span><i class="fas fa-heart"></i> 167</span>
+                                    <span><i class="fas fa-eye"></i> 980</span>
+                                </div>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="action-btn like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="action-btn zoom-btn" data-image="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="action-btn share-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 6 -->
+                <div class="gallery-item" data-category="alam">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bukit Lawang">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Bukit Lawang</h3>
+                                <p>Pusat rehabilitasi orangutan Sumatera</p>
+                                <div class="photo-stats">
+                                    <span><i class="fas fa-heart"></i> 312</span>
+                                    <span><i class="fas fa-eye"></i> 1.8k</span>
+                                </div>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="action-btn like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="action-btn zoom-btn" data-image="https://images.unsplash.com/photo-1501854140801-50d01698950b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="action-btn share-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 7 -->
+                <div class="gallery-item" data-category="wisata">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Rumah Tjong A Fie">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Rumah Tjong A Fie</h3>
+                                <p>Rumah bergaya arsitektur Tionghoa</p>
+                                <div class="photo-stats">
+                                    <span><i class="fas fa-heart"></i> 198</span>
+                                    <span><i class="fas fa-eye"></i> 1.1k</span>
+                                </div>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="action-btn like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="action-btn zoom-btn" data-image="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="action-btn share-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 8 -->
+                <div class="gallery-item" data-category="kuliner populer">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Soto Medan">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Soto Medan</h3>
+                                <p>Sup tradisional dengan kuah santan</p>
+                                <div class="photo-stats">
+                                    <span><i class="fas fa-heart"></i> 223</span>
+                                    <span><i class="fas fa-eye"></i> 1.3k</span>
+                                </div>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="action-btn like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="action-btn zoom-btn" data-image="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="action-btn share-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 9 -->
+                <div class="gallery-item" data-category="alam">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Taman Simalem">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Taman Simalem</h3>
+                                <p>Resort dengan pemandangan Danau Toba</p>
+                                <div class="photo-stats">
+                                    <span><i class="fas fa-heart"></i> 276</span>
+                                    <span><i class="fas fa-eye"></i> 1.6k</span>
+                                </div>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="action-btn like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="action-btn zoom-btn" data-image="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="action-btn share-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 10 -->
+                <div class="gallery-item" data-category="budaya">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1541336032412-2048a678540d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Tarian Tradisional">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Tarian Tradisional</h3>
+                                <p>Penampilan tari Tortor khas Batak</p>
+                                <div class="photo-stats">
+                                    <span><i class="fas fa-heart"></i> 189</span>
+                                    <span><i class="fas fa-eye"></i> 950</span>
+                                </div>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="action-btn like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="action-btn zoom-btn" data-image="https://images.unsplash.com/photo-1541336032412-2048a678540d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="action-btn share-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 11 -->
+                <div class="gallery-item" data-category="kota">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Merdeka Walk">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Merdeka Walk</h3>
+                                <p>Pusat kuliner dan hiburan di Medan</p>
+                                <div class="photo-stats">
+                                    <span><i class="fas fa-heart"></i> 201</span>
+                                    <span><i class="fas fa-eye"></i> 1.1k</span>
+                                </div>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="action-btn like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="action-btn zoom-btn" data-image="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="action-btn share-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto 12 -->
+                <div class="gallery-item" data-category="wisata populer">
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Museum">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h3>Museum Negeri Sumatera Utara</h3>
+                                <p>Museum dengan koleksi sejarah dan budaya</p>
+                                <div class="photo-stats">
+                                    <span><i class="fas fa-heart"></i> 156</span>
+                                    <span><i class="fas fa-eye"></i> 870</span>
+                                </div>
+                            </div>
+                            <div class="gallery-actions">
+                                <button class="action-btn like-btn">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                                <button class="action-btn zoom-btn" data-image="https://images.unsplash.com/photo-1571624436279-b272aff752b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                                <button class="action-btn share-btn">
+                                    <i class="fas fa-share"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="btn btn-load-more">
+                    <i class="fas fa-plus"></i> Muat Lebih Banyak Foto
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-desc"></p>
+            </div>
+            <div class="lightbox-nav">
+                <button class="nav-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="gallery-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Punya Foto Menarik dari Medan?</h2>
+                <p>Bagikan foto perjalanan Anda dan dapatkan kesempatan ditampilkan di galeri kami</p>
+                <div class="cta-buttons">
+                    <a href="kontak.html" class="btn btn-large">Kirim Foto</a>
+                    <a href="blog.html" class="btn btn-outline">
+                        <i class="fas fa-camera"></i> Lihat Blog Foto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Wisata Medan</h3>
+                    <p>Portal informasi lengkap tentang pariwisata di Kota Medan.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Menu Utama</h3>
+                    <a href="index.html">Beranda</a>
+                    <a href="destinasi.html">Destinasi</a>
+                    <a href="kuliner.html">Kuliner</a>
+                    <a href="budaya.html">Budaya</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Informasi</h3>
+                    <a href="akomodasi.html">Akomodasi</a>
+                    <a href="transportasi.html">Transportasi</a>
+                    <a href="galeri.html">Galeri</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Kontak</h3>
+                    <p>Email: info@wisatamedan.com</p>
+                    <p>Telepon: +62 61 1234567</p>
+                    <p>Alamat: Jl. Perintis Kemerdekaan, Medan</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wisata Medan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Gallery Filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                const filter = btn.dataset.filter;
+                
+                galleryItems.forEach(item => {
+                    if (filter === 'semua' || item.dataset.category.includes(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Like Button
+        const likeBtns = document.querySelectorAll('.like-btn');
+        likeBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                const stats = this.closest('.gallery-overlay').querySelector('.photo-stats span:first-child');
+                
+                if (icon.classList.contains('far')) {
+                    icon.classList.replace('far', 'fas');
+                    icon.style.color = '#e74c3c';
+                    
+                    // Update like count
+                    let currentLikes = parseInt(stats.textContent.match(/\d+/)[0]);
+                    stats.innerHTML = `<i class="fas fa-heart"></i> ${currentLikes + 1}`;
+                } else {
+                    icon.classList.replace('fas', 'far');
+                    icon.style.color = '';
+                    
+                    // Update like count
+                    let currentLikes = parseInt(stats.textContent.match(/\d+/)[0]);
+                    stats.innerHTML = `<i class="fas fa-heart"></i> ${currentLikes - 1}`;
+                }
+            });
+        });
+
+        // Lightbox Functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxTitle = document.getElementById('lightbox-title');
+        const lightboxDesc = document.getElementById('lightbox-desc');
+        const zoomBtns = document.querySelectorAll('.zoom-btn');
+        const closeLightbox = document.querySelector('.lightbox-close');
+
+        zoomBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const imgSrc = this.dataset.image;
+                const galleryItem = this.closest('.gallery-item');
+                const title = galleryItem.querySelector('h3').textContent;
+                const desc = galleryItem.querySelector('p').textContent;
+                
+                lightboxImg.src = imgSrc;
+                lightboxTitle.textContent = title;
+                lightboxDesc.textContent = desc;
+                lightbox.style.display = 'flex';
+            });
+        });
+
+        closeLightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+            }
+        });
+
+        // Load More Button
+        const loadMoreBtn = document.querySelector('.btn-load-more');
+        let currentItems = 12;
+        
+        loadMoreBtn.addEventListener('click', () => {
+            // Simulate loading more items
+            const items = Array.from(galleryItems);
+            for (let i = currentItems; i < currentItems + 6; i++) {
+                if (items[i]) {
+                    items[i].style.display = 'block';
+                }
+            }
+            currentItems += 6;
+            
+            // Hide button if no more items
+            if (currentItems >= items.length) {
+                loadMoreBtn.style.display = 'none';
+            }
+        });
+
+        // Share Button
+        const shareBtns = document.querySelectorAll('.share-btn');
+        shareBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const galleryItem = this.closest('.gallery-item');
+                const title = galleryItem.querySelector('h3').textContent;
+                const imageUrl = galleryItem.querySelector('img').src;
+                
+                if (navigator.share) {
+                    navigator.share({
+                        title: title,
+                        text: 'Lihat foto menarik dari Medan!',
+                        url: window.location.href
+                    });
+                } else {
+                    // Fallback for browsers that don't support Web Share API
+                    alert('Bagikan foto ini melalui media sosial favorit Anda!');
+                }
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'scale(1)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe gallery items for animation
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'scale(0.8)';
+            item.style.transition = 'all 0.6s ease';
+            observer.observe(item);
+        });
+    </script>
+</body>
+</html>

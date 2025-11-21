@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - WisataMedan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kontak.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">WisataMedan</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="destinasi.html">Destinasi</a></li>
+                    <li><a href="kuliner.html">Kuliner</a></li>
+                    <li><a href="budaya.html">Budaya</a></li>
+                    <li><a href="akomodasi.html">Akomodasi</a></li>
+                    <li><a href="transportasi.html">Transportasi</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="kontak.html" class="active">Kontak</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Hubungi Kami</h1>
+            <p>Kami siap membantu Anda merencanakan perjalanan terbaik di Medan</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Mari Terhubung</h2>
+                    <p class="contact-description">
+                        Tim kami siap membantu menjawab pertanyaan, menerima saran, atau membantu merencanakan perjalanan Anda di Medan. Jangan ragu untuk menghubungi kami.
+                    </p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Alamat Kantor</h3>
+                                <p>Jl. Perintis Kemerdekaan No. 123<br>Medan, Sumatera Utara 20153</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Telepon</h3>
+                                <p>+62 61 1234 5678<br>+62 61 8765 4321</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Email</h3>
+                                <p>info@wisatamedan.com<br>support@wisatamedan.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="method-info">
+                                <h3>Jam Operasional</h3>
+                                <p>Senin - Jumat: 08.00 - 17.00 WIB<br>Sabtu: 08.00 - 15.00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Ikuti Kami</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h2>Kirim Pesan</h2>
+                        <p>Isi form di bawah ini dan kami akan membalas dalam 24 jam</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Alamat Email *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone">
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subjek *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Pilih subjek...</option>
+                                <option value="general">Pertanyaan Umum</option>
+                                <option value="destination">Informasi Destinasi</option>
+                                <option value="culinary">Rekomendasi Kuliner</option>
+                                <option value="accommodation">Bantuan Akomodasi</option>
+                                <option value="transportation">Informasi Transportasi</option>
+                                <option value="partnership">Kemitraan & Kerjasama</option>
+                                <option value="complaint">Keluhan & Saran</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Pesan *</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Saya ingin berlangganan newsletter WisataMedan</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Bagaimana cara mendapatkan rekomendasi destinasi di Medan?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Anda dapat menjelajahi halaman Destinasi kami yang berisi berbagai tempat wisata populer di Medan. Jika membutuhkan rekomendasi personal, silakan hubungi kami melalui form kontak dengan menyebutkan preferensi dan budget perjalanan.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah WisataMedan menyediakan layanan tur guide?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, kami bekerja sama dengan guide lokal terpercaya. Silakan hubungi kami untuk informasi lebih lanjut mengenai paket tur dan harga guide yang tersedia.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Berapa lama waktu respons untuk pertanyaan melalui form kontak?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kami biasanya merespons dalam waktu 24 jam pada hari kerja. Untuk pertanyaan mendesak, silakan hubungi nomor telepon kami yang tersedia.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Apakah saya bisa mengirimkan foto atau cerita perjalanan ke WisataMedan?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tentu! Kami sangat menerima kontribusi dari traveler. Silakan kirim foto dan cerita perjalanan Anda melalui form kontak dengan subjek "Kontribusi Blog".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Lokasi Kantor Kami</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Peta Lokasi</h3>
+                    <p>Jl. Perintis Kemerdekaan No. 123, Medan</p>
+                    <div class="map-actions">
+                        <a href="https://maps.google.com" class="btn btn-map" target="_blank">
+                            <i class="fas fa-directions"></i>
+                            Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+                <!-- In real implementation, you would embed Google Maps here -->
+                <!-- <iframe src="https://www.google.com/maps/embed?..." width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Butuh Bantuan Cepat?</h2>
+                <p>Hubungi kami langsung melalui telepon atau WhatsApp untuk respon yang lebih cepat</p>
+                <div class="cta-buttons">
+                    <a href="tel:+626112345678" class="btn btn-large">
+                        <i class="fas fa-phone"></i>
+                        +62 61 1234 5678
+                    </a>
+                    <a href="https://wa.me/628112345678" class="btn btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Wisata Medan</h3>
+                    <p>Portal informasi lengkap tentang pariwisata di Kota Medan.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Menu Utama</h3>
+                    <a href="index.html">Beranda</a>
+                    <a href="destinasi.html">Destinasi</a>
+                    <a href="kuliner.html">Kuliner</a>
+                    <a href="budaya.html">Budaya</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Informasi</h3>
+                    <a href="akomodasi.html">Akomodasi</a>
+                    <a href="transportasi.html">Transportasi</a>
+                    <a href="galeri.html">Galeri</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Kontak</h3>
+                    <p>Email: info@wisatamedan.com</p>
+                    <p>Telepon: +62 61 1234567</p>
+                    <p>Alamat: Jl. Perintis Kemerdekaan, Medan</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wisata Medan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Pesan Terkirim!</h3>
+            <p>Terima kasih telah menghubungi kami. Kami akan merespons pesan Anda dalam waktu 24 jam.</p>
+            <button class="btn btn-modal" onclick="closeModal()">Tutup</button>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // FAQ Accordion
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Close other open items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-answer').style.maxHeight = null;
+                        item.querySelector('i').classList.remove('fa-chevron-up');
+                        item.querySelector('i').classList.add('fa-chevron-down');
+                    }
+                });
+                
+                // Toggle current item
+                faqItem.classList.toggle('active');
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    answer.style.maxHeight = null;
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+
+        // Form Validation
+        const contactForm = document.getElementById('contactForm');
+        const successModal = document.getElementById('successModal');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (validateForm()) {
+                // Simulate form submission
+                showModal();
+                contactForm.reset();
+            }
+        });
+
+        function validateForm() {
+            let isValid = true;
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const subject = document.getElementById('subject');
+            const message = document.getElementById('message');
+
+            // Reset errors
+            document.querySelectorAll('.error-message').forEach(error => {
+                error.textContent = '';
+            });
+            document.querySelectorAll('.form-group').forEach(group => {
+                group.classList.remove('error');
+            });
+
+            // Name validation
+            if (name.value.trim() === '') {
+                showError('nameError', 'Nama lengkap wajib diisi');
+                name.parentElement.classList.add('error');
+                isValid = false;
+            }
+
+            // Email validation
+            if (email.value.trim() === '') {
+                showError('emailError', 'Alamat email wajib diisi');
+                email.parentElement.classList.add('error');
+                isValid = false;
+            } else if (!isValidEmail(email.value)) {
+                showError('emailError', 'Format email tidak valid');
+                email.parentElement.classList.add('error');
+                isValid = false;
+            }
+
+            // Subject validation
+            if (subject.value === '') {
+                showError('subjectError', 'Silakan pilih subjek pesan');
+                subject.parentElement.classList.add('error');
+                isValid = false;
+            }
+
+            // Message validation
+            if (message.value.trim() === '') {
+                showError('messageError', 'Pesan wajib diisi');
+                message.parentElement.classList.add('error');
+                isValid = false;
+            } else if (message.value.trim().length < 10) {
+                showError('messageError', 'Pesan minimal 10 karakter');
+                message.parentElement.classList.add('error');
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
+        function showError(elementId, message) {
+            document.getElementById(elementId).textContent = message;
+        }
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function showModal() {
+            successModal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            successModal.style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.addEventListener('click', function(e) {
+            if (e.target === successModal) {
+                closeModal();
+            }
+        });
+
+        // Real-time validation
+        const formInputs = document.querySelectorAll('#contactForm input, #contactForm select, #contactForm textarea');
+        formInputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                validateField(this);
+            });
+
+            input.addEventListener('input', function() {
+                // Clear error when user starts typing
+                if (this.parentElement.classList.contains('error')) {
+                    const errorId = this.id + 'Error';
+                    showError(errorId, '');
+                    this.parentElement.classList.remove('error');
+                }
+            });
+        });
+
+        function validateField(field) {
+            const value = field.value.trim();
+            const fieldId = field.id;
+
+            switch (fieldId) {
+                case 'name':
+                    if (value === '') {
+                        showError('nameError', 'Nama lengkap wajib diisi');
+                        field.parentElement.classList.add('error');
+                    }
+                    break;
+                case 'email':
+                    if (value === '') {
+                        showError('emailError', 'Alamat email wajib diisi');
+                        field.parentElement.classList.add('error');
+                    } else if (!isValidEmail(value)) {
+                        showError('emailError', 'Format email tidak valid');
+                        field.parentElement.classList.add('error');
+                    }
+                    break;
+                case 'message':
+                    if (value === '') {
+                        showError('messageError', 'Pesan wajib diisi');
+                        field.parentElement.classList.add('error');
+                    } else if (value.length < 10) {
+                        showError('messageError', 'Pesan minimal 10 karakter');
+                        field.parentElement.classList.add('error');
+                    }
+                    break;
+            }
+        }
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.contact-method, .faq-item, .form-group').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

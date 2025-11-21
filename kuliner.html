@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Khas Medan - WisataMedan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="kuliner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">WisataMedan</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="destinasi.html">Destinasi</a></li>
+                    <li><a href="kuliner.html" class="active">Kuliner</a></li>
+                    <li><a href="budaya.html">Budaya</a></li>
+                    <li><a href="akomodasi.html">Akomodasi</a></li>
+                    <li><a href="transportasi.html">Transportasi</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Kuliner Khas Medan</h1>
+            <p>Jelajahi kelezatan makanan khas Medan yang menggugah selera</p>
+        </div>
+    </section>
+
+    <!-- Kategori Kuliner -->
+    <section class="kategori-section">
+        <div class="container">
+            <div class="kategori-grid">
+                <div class="kategori-card active" data-kategori="semua">
+                    <i class="fas fa-utensils"></i>
+                    <span>Semua</span>
+                </div>
+                <div class="kategori-card" data-kategori="makanan">
+                    <i class="fas fa-bowl-food"></i>
+                    <span>Makanan</span>
+                </div>
+                <div class="kategori-card" data-kategori="kue">
+                    <i class="fas fa-cookie"></i>
+                    <span>Kue & Jajanan</span>
+                </div>
+                <div class="kategori-card" data-kategori="minuman">
+                    <i class="fas fa-mug-hot"></i>
+                    <span>Minuman</span>
+                </div>
+                <div class="kategori-card" data-kategori="buah">
+                    <i class="fas fa-apple-whole"></i>
+                    <span>Buah Khas</span>
+                </div>
+                <div class="kategori-card" data-kategori="populer">
+                    <i class="fas fa-fire"></i>
+                    <span>Populer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kuliner Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="kuliner-grid">
+                <!-- Kuliner 1 -->
+                <div class="kuliner-card" data-kategori="makanan populer">
+                    <div class="kuliner-img">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bika Ambon">
+                        <div class="kuliner-badge populer">Populer</div>
+                        <div class="harga">Rp 25.000</div>
+                    </div>
+                    <div class="kuliner-content">
+                        <h3>Bika Ambon</h3>
+                        <p class="deskripsi">Kue tradisional dengan tekstur kenyal dan berlubang-lubang, rasa manis legit dengan aroma tape yang khas.</p>
+                        <div class="kuliner-info">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.8
+                            </span>
+                            <span class="jenis">
+                                <i class="fas fa-tag"></i> Kue
+                            </span>
+                        </div>
+                        <div class="kuliner-actions">
+                            <a href="kuliner-detail.html" class="btn">Lihat Detail</a>
+                            <button class="btn-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kuliner 2 -->
+                <div class="kuliner-card" data-kategori="makanan populer">
+                    <div class="kuliner-img">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Soto Medan">
+                        <div class="kuliner-badge populer">Populer</div>
+                        <div class="harga">Rp 35.000</div>
+                    </div>
+                    <div class="kuliner-content">
+                        <h3>Soto Medan</h3>
+                        <p class="deskripsi">Sup tradisional dengan kuah santan gurih, daging sapi empuk, dan rempah-rempah khas Sumatera.</p>
+                        <div class="kuliner-info">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.9
+                            </span>
+                            <span class="jenis">
+                                <i class="fas fa-tag"></i> Makanan Berat
+                            </span>
+                        </div>
+                        <div class="kuliner-actions">
+                            <a href="kuliner-detail.html" class="btn">Lihat Detail</a>
+                            <button class="btn-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kuliner 3 -->
+                <div class="kuliner-card" data-kategori="makanan">
+                    <div class="kuliner-img">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Mie Gomak">
+                        <div class="kuliner-badge makanan">Makanan</div>
+                        <div class="harga">Rp 28.000</div>
+                    </div>
+                    <div class="kuliner-content">
+                        <h3>Mie Gomak</h3>
+                        <p class="deskripsi">Mie khas Batak dengan bumbu andaliman yang memberikan rasa unik dan pedas khas.</p>
+                        <div class="kuliner-info">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.7
+                            </span>
+                            <span class="jenis">
+                                <i class="fas fa-tag"></i> Makanan Berat
+                            </span>
+                        </div>
+                        <div class="kuliner-actions">
+                            <a href="kuliner-detail.html" class="btn">Lihat Detail</a>
+                            <button class="btn-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kuliner 4 -->
+                <div class="kuliner-card" data-kategori="buah populer">
+                    <div class="kuliner-img">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Durian Medan">
+                        <div class="kuliner-badge populer">Populer</div>
+                        <div class="harga">Rp 45.000/kg</div>
+                    </div>
+                    <div class="kuliner-content">
+                        <h3>Durian Medan</h3>
+                        <p class="deskripsi">Raja buah dengan daging tebal, tekstur lembut, rasa manis legit, dan aroma yang khas.</p>
+                        <div class="kuliner-info">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.9
+                            </span>
+                            <span class="jenis">
+                                <i class="fas fa-tag"></i> Buah
+                            </span>
+                        </div>
+                        <div class="kuliner-actions">
+                            <a href="kuliner-detail.html" class="btn">Lihat Detail</a>
+                            <button class="btn-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kuliner 5 -->
+                <div class="kuliner-card" data-kategori="kue">
+                    <div class="kuliner-img">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Kue Srikaya">
+                        <div class="kuliner-badge kue">Kue</div>
+                        <div class="harga">Rp 18.000</div>
+                    </div>
+                    <div class="kuliner-content">
+                        <h3>Kue Srikaya</h3>
+                        <p class="deskripsi">Kue tradisional dengan lapisan hijau pandan dan selai srikaya yang manis legit.</p>
+                        <div class="kuliner-info">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.6
+                            </span>
+                            <span class="jenis">
+                                <i class="fas fa-tag"></i> Kue
+                            </span>
+                        </div>
+                        <div class="kuliner-actions">
+                            <a href="kuliner-detail.html" class="btn">Lihat Detail</a>
+                            <button class="btn-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kuliner 6 -->
+                <div class="kuliner-card" data-kategori="minuman">
+                    <div class="kuliner-img">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Teh Tarik">
+                        <div class="kuliner-badge minuman">Minuman</div>
+                        <div class="harga">Rp 15.000</div>
+                    </div>
+                    <div class="kuliner-content">
+                        <h3>Teh Tarik Medan</h3>
+                        <p class="deskripsi">Minuman khas dengan teknik tarikan khas yang menghasilkan tekstur creamy dan rasa teh yang kuat.</p>
+                        <div class="kuliner-info">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.5
+                            </span>
+                            <span class="jenis">
+                                <i class="fas fa-tag"></i> Minuman
+                            </span>
+                        </div>
+                        <div class="kuliner-actions">
+                            <a href="kuliner-detail.html" class="btn">Lihat Detail</a>
+                            <button class="btn-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kuliner 7 -->
+                <div class="kuliner-card" data-kategori="makanan">
+                    <div class="kuliner-img">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bihun Bebek">
+                        <div class="kuliner-badge makanan">Makanan</div>
+                        <div class="harga">Rp 32.000</div>
+                    </div>
+                    <div class="kuliner-content">
+                        <h3>Bihun Bebek</h3>
+                        <p class="deskripsi">Bihun dengan kuah kaldu bebek yang gurih, dilengkapi daging bebek empuk dan bumbu rempah.</p>
+                        <div class="kuliner-info">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.7
+                            </span>
+                            <span class="jenis">
+                                <i class="fas fa-tag"></i> Makanan Berat
+                            </span>
+                        </div>
+                        <div class="kuliner-actions">
+                            <a href="kuliner-detail.html" class="btn">Lihat Detail</a>
+                            <button class="btn-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kuliner 8 -->
+                <div class="kuliner-card" data-kategori="kue populer">
+                    <div class="kuliner-img">
+                        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Kue Lapis">
+                        <div class="kuliner-badge populer">Populer</div>
+                        <div class="harga">Rp 22.000</div>
+                    </div>
+                    <div class="kuliner-content">
+                        <h3>Kue Lapis Medan</h3>
+                        <p class="deskripsi">Kue tradisional berlapis-lapis dengan tekstur lembut dan rasa manis yang khas.</p>
+                        <div class="kuliner-info">
+                            <span class="rating">
+                                <i class="fas fa-star"></i> 4.8
+                            </span>
+                            <span class="jenis">
+                                <i class="fas fa-tag"></i> Kue
+                            </span>
+                        </div>
+                        <div class="kuliner-actions">
+                            <a href="kuliner-detail.html" class="btn">Lihat Detail</a>
+                            <button class="btn-favorite">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn next">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rekomendasi Tempat Makan -->
+    <section class="tempat-makan-section">
+        <div class="container">
+            <h2 class="section-title">Rekomendasi Tempat Makan</h2>
+            <div class="tempat-makan-grid">
+                <div class="tempat-makan-card">
+                    <div class="tempat-img">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Merdeka Walk">
+                    </div>
+                    <div class="tempat-content">
+                        <h3>Merdeka Walk</h3>
+                        <p class="alamat"><i class="fas fa-map-marker-alt"></i> Jl. Balai Kota, Medan</p>
+                        <p class="deskripsi">Food court dengan berbagai kuliner khas Medan dalam satu lokasi.</p>
+                        <div class="tempat-info">
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                            <span><i class="fas fa-clock"></i> 18:00-24:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tempat-makan-card">
+                    <div class="tempat-img">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Soto Kesawan">
+                    </div>
+                    <div class="tempat-content">
+                        <h3>Soto Kesawan</h3>
+                        <p class="alamat"><i class="fas fa-map-marker-alt"></i> Jl. A. Yani, Medan</p>
+                        <p class="deskripsi">Tempat legendaris untuk mencicipi soto Medan terbaik sejak 1950.</p>
+                        <div class="tempat-info">
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                            <span><i class="fas fa-clock"></i> 07:00-22:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tempat-makan-card">
+                    <div class="tempat-img">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bika Ambon Zulaikha">
+                    </div>
+                    <div class="tempat-content">
+                        <h3>Bika Ambon Zulaikha</h3>
+                        <p class="alamat"><i class="fas fa-map-marker-alt"></i> Jl. Mojopahit, Medan</p>
+                        <p class="deskripsi">Tempat terbaik untuk membeli Bika Ambon asli Medan.</p>
+                        <div class="tempat-info">
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                            <span><i class="fas fa-clock"></i> 08:00-21:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Wisata Medan</h3>
+                    <p>Portal informasi lengkap tentang pariwisata di Kota Medan.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Menu Utama</h3>
+                    <a href="index.html">Beranda</a>
+                    <a href="destinasi.html">Destinasi</a>
+                    <a href="kuliner.html">Kuliner</a>
+                    <a href="budaya.html">Budaya</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Informasi</h3>
+                    <a href="akomodasi.html">Akomodasi</a>
+                    <a href="transportasi.html">Transportasi</a>
+                    <a href="galeri.html">Galeri</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Kontak</h3>
+                    <p>Email: info@wisatamedan.com</p>
+                    <p>Telepon: +62 61 1234567</p>
+                    <p>Alamat: Jl. Perintis Kemerdekaan, Medan</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wisata Medan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Filter Kategori
+        const kategoriCards = document.querySelectorAll('.kategori-card');
+        const kulinerCards = document.querySelectorAll('.kuliner-card');
+
+        kategoriCards.forEach(kategori => {
+            kategori.addEventListener('click', () => {
+                kategoriCards.forEach(k => k.classList.remove('active'));
+                kategori.classList.add('active');
+                
+                const filter = kategori.dataset.kategori;
+                
+                kulinerCards.forEach(card => {
+                    if (filter === 'semua' || card.dataset.kategori.includes(filter)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Favorite Button
+        const favButtons = document.querySelectorAll('.btn-favorite');
+        favButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.replace('far', 'fas');
+                    icon.style.color = '#e74c3c';
+                } else {
+                    icon.classList.replace('fas', 'far');
+                    icon.style.color = '';
+                }
+            });
+        });
+
+        // Pagination
+        const pageBtns = document.querySelectorAll('.page-btn');
+        pageBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                pageBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

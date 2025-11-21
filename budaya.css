@@ -1,0 +1,505 @@
+/* Budaya Page Styles */
+
+/* Intro Section */
+.intro-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.intro-text h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.intro-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--dark);
+    margin-bottom: 30px;
+}
+
+.cultural-stats {
+    display: flex;
+    gap: 40px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.intro-image {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.intro-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Etnis Section */
+.etnis-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.etnis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.etnis-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.etnis-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.etnis-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary), #1e3a21);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.etnis-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.etnis-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.etnis-card p {
+    color: var(--gray);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.etnis-features {
+    list-style: none;
+    text-align: left;
+}
+
+.etnis-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    color: var(--dark);
+    font-size: 0.9rem;
+}
+
+.etnis-features i {
+    color: var(--accent);
+    width: 16px;
+}
+
+/* Tradisi Section */
+.tradisi-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.tradisi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.tradisi-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.tradisi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.tradisi-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.tradisi-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.tradisi-card:hover .tradisi-img img {
+    transform: scale(1.05);
+}
+
+.tradisi-content {
+    padding: 25px;
+}
+
+.tradisi-content h3 {
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.tradisi-desc {
+    color: var(--gray);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.tradisi-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.tradisi-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tradisi-meta i {
+    color: var(--accent);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: white;
+}
+
+/* Kesenian Section */
+.kesenian-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.kesenian-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 12px 25px;
+    background: white;
+    border: 2px solid #e9ecef;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.tab-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.tab-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.kesenian-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.kesenian-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.kesenian-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.kesenian-img {
+    height: 180px;
+    overflow: hidden;
+}
+
+.kesenian-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.kesenian-content {
+    padding: 20px;
+}
+
+.kesenian-content h4 {
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.kesenian-content p {
+    color: var(--gray);
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.kesenian-origin {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--secondary);
+    color: var(--dark);
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Pakaian Section */
+.pakaian-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.pakaian-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.pakaian-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.pakaian-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.pakaian-img {
+    height: 250px;
+    overflow: hidden;
+}
+
+.pakaian-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pakaian-content {
+    padding: 25px;
+}
+
+.pakaian-content h3 {
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.pakaian-content p {
+    color: var(--gray);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.pakaian-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.pakaian-features span {
+    font-size: 0.9rem;
+    color: var(--dark);
+    font-weight: 500;
+}
+
+/* CTA Section */
+.budaya-cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary), #1e3a21);
+    color: white;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-large {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .intro-text h2 {
+        font-size: 2rem;
+    }
+    
+    .cultural-stats {
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .etnis-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tradisi-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .kesenian-tabs {
+        gap: 5px;
+    }
+    
+    .tab-btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    
+    .kesenian-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pakaian-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-large {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-section {
+        padding: 60px 0;
+    }
+    
+    .cultural-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .tradisi-meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .kesenian-tabs {
+        flex-direction: column;
+    }
+    
+    .tab-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

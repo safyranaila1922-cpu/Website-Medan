@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akomodasi & Penginapan Medan - WisataMedan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="akomodasi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">WisataMedan</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="destinasi.html">Destinasi</a></li>
+                    <li><a href="kuliner.html">Kuliner</a></li>
+                    <li><a href="budaya.html">Budaya</a></li>
+                    <li><a href="akomodasi.html" class="active">Akomodasi</a></li>
+                    <li><a href="transportasi.html">Transportasi</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="tentang.html">Tentang</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Akomodasi & Penginapan</h1>
+            <p>Temukan tempat menginap terbaik di Medan untuk kenyamanan perjalanan Anda</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-grid">
+                <div class="filter-group">
+                    <label for="tipe">Tipe Akomodasi</label>
+                    <select id="tipe" class="filter-select">
+                        <option value="semua">Semua Tipe</option>
+                        <option value="hotel">Hotel</option>
+                        <option value="resort">Resort</option>
+                        <option value="villa">Villa</option>
+                        <option value="guesthouse">Guest House</option>
+                        <option value="hostel">Hostel</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="bintang">Bintang</label>
+                    <select id="bintang" class="filter-select">
+                        <option value="semua">Semua Bintang</option>
+                        <option value="5">5 Bintang</option>
+                        <option value="4">4 Bintang</option>
+                        <option value="3">3 Bintang</option>
+                        <option value="2">2 Bintang</option>
+                        <option value="1">1 Bintang</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="harga">Kisaran Harga</label>
+                    <select id="harga" class="filter-select">
+                        <option value="semua">Semua Harga</option>
+                        <option value="murah">< Rp 300.000</option>
+                        <option value="sedang">Rp 300.000 - 700.000</option>
+                        <option value="tinggi">> Rp 700.000</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="lokasi">Lokasi</label>
+                    <select id="lokasi" class="filter-select">
+                        <option value="semua">Semua Lokasi</option>
+                        <option value="pusat">Pusat Kota</option>
+                        <option value="bandara">Dekat Bandara</option>
+                        <option value="stasiun">Dekat Stasiun</option>
+                        <option value="danau-toba">Dekat Danau Toba</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Cari nama hotel atau lokasi..." class="search-input">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i> Cari
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotel Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="hotel-grid">
+                <!-- Hotel 1 -->
+                <div class="hotel-card" data-tipe="hotel" data-bintang="5" data-harga="tinggi" data-lokasi="pusat">
+                    <div class="hotel-img">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="JW Marriott Medan">
+                        <div class="hotel-badge luxury">Luxury</div>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="hotel-content">
+                        <div class="hotel-header">
+                            <h3>JW Marriott Hotel Medan</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <p class="location">
+                            <i class="fas fa-map-marker-alt"></i> Jl. Putri Hijau No. 10, Medan
+                        </p>
+                        <p class="description">
+                            Hotel mewah dengan fasilitas lengkap di pusat kota, dekat dengan pusat perbelanjaan dan tempat wisata.
+                        </p>
+                        <div class="hotel-features">
+                            <span><i class="fas fa-wifi"></i> WiFi Gratis</span>
+                            <span><i class="fas fa-swimming-pool"></i> Kolam Renang</span>
+                            <span><i class="fas fa-dumbbell"></i> Gym</span>
+                            <span><i class="fas fa-utensils"></i> Restoran</span>
+                        </div>
+                        <div class="hotel-footer">
+                            <div class="price">
+                                <span class="amount">Rp 1.200.000</span>
+                                <span class="period">/malam</span>
+                            </div>
+                            <a href="akomodasi-detail.html" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 2 -->
+                <div class="hotel-card" data-tipe="hotel" data-bintang="4" data-harga="sedang" data-lokasi="pusat">
+                    <div class="hotel-img">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Santika Premiere Medan">
+                        <div class="hotel-badge premium">Premium</div>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="hotel-content">
+                        <div class="hotel-header">
+                            <h3>Santika Premiere Medan</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <p class="location">
+                            <i class="fas fa-map-marker-alt"></i> Jl. Diponegoro No. 21, Medan
+                        </p>
+                        <p class="description">
+                            Hotel bintang 4 dengan pelayanan terbaik, cocok untuk bisnis dan keluarga.
+                        </p>
+                        <div class="hotel-features">
+                            <span><i class="fas fa-wifi"></i> WiFi Gratis</span>
+                            <span><i class="fas fa-swimming-pool"></i> Kolam Renang</span>
+                            <span><i class="fas fa-spa"></i> Spa</span>
+                            <span><i class="fas fa-utensils"></i> 2 Restoran</span>
+                        </div>
+                        <div class="hotel-footer">
+                            <div class="price">
+                                <span class="amount">Rp 650.000</span>
+                                <span class="period">/malam</span>
+                            </div>
+                            <a href="akomodasi-detail.html" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 3 -->
+                <div class="hotel-card" data-tipe="resort" data-bintang="5" data-harga="tinggi" data-lokasi="danau-toba">
+                    <div class="hotel-img">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Taman Simalem Resort">
+                        <div class="hotel-badge luxury">Luxury</div>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="hotel-content">
+                        <div class="hotel-header">
+                            <h3>Taman Simalem Resort</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <p class="location">
+                            <i class="fas fa-map-marker-alt"></i> Simalem, Kawasan Danau Toba
+                        </p>
+                        <p class="description">
+                            Resort mewah dengan pemandangan Danau Toba yang menakjubkan, dilengkapi villa private.
+                        </p>
+                        <div class="hotel-features">
+                            <span><i class="fas fa-wifi"></i> WiFi</span>
+                            <span><i class="fas fa-swimming-pool"></i> Infinity Pool</span>
+                            <span><i class="fas fa-hiking"></i> Trekking</span>
+                            <span><i class="fas fa-wine-glass-alt"></i> Bar</span>
+                        </div>
+                        <div class="hotel-footer">
+                            <div class="price">
+                                <span class="amount">Rp 2.500.000</span>
+                                <span class="period">/malam</span>
+                            </div>
+                            <a href="akomodasi-detail.html" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 4 -->
+                <div class="hotel-card" data-tipe="hotel" data-bintang="3" data-harga="sedang" data-lokasi="bandara">
+                    <div class="hotel-img">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Aryaduta Hotel Medan">
+                        <div class="hotel-badge standard">Standard</div>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="hotel-content">
+                        <div class="hotel-header">
+                            <h3>Aryaduta Hotel Medan</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.3</span>
+                            </div>
+                        </div>
+                        <p class="location">
+                            <i class="fas fa-map-marker-alt"></i> Jl. Kapten Pattimura, Medan
+                        </p>
+                        <p class="description">
+                            Hotel nyaman dengan akses mudah ke bandara, cocok untuk transit dan perjalanan bisnis.
+                        </p>
+                        <div class="hotel-features">
+                            <span><i class="fas fa-wifi"></i> WiFi Gratis</span>
+                            <span><i class="fas fa-utensils"></i> Restoran</span>
+                            <span><i class="fas fa-car"></i> Airport Shuttle</span>
+                            <span><i class="fas fa-concierge-bell"></i> Room Service</span>
+                        </div>
+                        <div class="hotel-footer">
+                            <div class="price">
+                                <span class="amount">Rp 450.000</span>
+                                <span class="period">/malam</span>
+                            </div>
+                            <a href="akomodasi-detail.html" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 5 -->
+                <div class="hotel-card" data-tipe="guesthouse" data-bintang="2" data-harga="murah" data-lokasi="pusat">
+                    <div class="hotel-img">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Medan Guest House">
+                        <div class="hotel-badge budget">Budget</div>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="hotel-content">
+                        <div class="hotel-header">
+                            <h3>Medan Guest House</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.0</span>
+                            </div>
+                        </div>
+                        <p class="location">
+                            <i class="fas fa-map-marker-alt"></i> Jl. Sisingamangaraja, Medan
+                        </p>
+                        <p class="description">
+                            Guest house nyaman dengan harga terjangkau, dekat dengan pusat kuliner dan tempat wisata.
+                        </p>
+                        <div class="hotel-features">
+                            <span><i class="fas fa-wifi"></i> WiFi Gratis</span>
+                            <span><i class="fas fa-thermometer-three-quarters"></i> AC</span>
+                            <span><i class="fas fa-mug-hot"></i> Breakfast</span>
+                            <span><i class="fas fa-luggage-cart"></i> Luggage Storage</span>
+                        </div>
+                        <div class="hotel-footer">
+                            <div class="price">
+                                <span class="amount">Rp 250.000</span>
+                                <span class="period">/malam</span>
+                            </div>
+                            <a href="akomodasi-detail.html" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hotel 6 -->
+                <div class="hotel-card" data-tipe="hostel" data-bintang="1" data-harga="murah" data-lokasi="stasiun">
+                    <div class="hotel-img">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Medan Backpackers Hostel">
+                        <div class="hotel-badge budget">Budget</div>
+                        <button class="favorite-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="hotel-content">
+                        <div class="hotel-header">
+                            <h3>Medan Backpackers Hostel</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>3.8</span>
+                            </div>
+                        </div>
+                        <p class="location">
+                            <i class="fas fa-map-marker-alt"></i> Jl. SM. Raja, Medan
+                        </p>
+                        <p class="description">
+                            Hostel backpacker dengan atmosfer sosial, cocok untuk traveler solo dan budget terbatas.
+                        </p>
+                        <div class="hotel-features">
+                            <span><i class="fas fa-wifi"></i> WiFi Gratis</span>
+                            <span><i class="fas fa-utensils"></i> Dapur Umum</span>
+                            <span><i class="fas fa-users"></i> Common Area</span>
+                            <span><i class="fas fa-lock"></i> Locker</span>
+                        </div>
+                        <div class="hotel-footer">
+                            <div class="price">
+                                <span class="amount">Rp 120.000</span>
+                                <span class="period">/malam</span>
+                            </div>
+                            <a href="akomodasi-detail.html" class="btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn next">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="tips-section">
+        <div class="container">
+            <h2 class="section-title">Tips Memilih Akomodasi</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Perhatikan Lokasi</h3>
+                    <p>Pilih hotel yang dekat dengan destinasi wisata atau akses transportasi untuk menghemat waktu dan biaya transportasi.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Bandungkan Harga</h3>
+                    <p>Bandingkan harga dari berbagai platform dan perhatikan fasilitas yang termasuk dalam paket harga.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Baca Review</h3>
+                    <p>Baca ulasan dari tamu sebelumnya untuk mengetahui kualitas pelayanan dan kebersihan akomodasi.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Booking Early</h3>
+                    <p>Pesan lebih awal untuk mendapatkan harga terbaik dan memastikan ketersediaan kamar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="akomodasi-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Butuh Bantuan Memilih Penginapan?</h2>
+                <p>Tim kami siap membantu Anda menemukan akomodasi terbaik sesuai budget dan kebutuhan perjalanan</p>
+                <div class="cta-buttons">
+                    <a href="kontak.html" class="btn btn-large">Konsultasi Gratis</a>
+                    <a href="tel:+62611234567" class="btn btn-outline">
+                        <i class="fas fa-phone"></i> Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Wisata Medan</h3>
+                    <p>Portal informasi lengkap tentang pariwisata di Kota Medan.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Menu Utama</h3>
+                    <a href="index.html">Beranda</a>
+                    <a href="destinasi.html">Destinasi</a>
+                    <a href="kuliner.html">Kuliner</a>
+                    <a href="budaya.html">Budaya</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Informasi</h3>
+                    <a href="akomodasi.html">Akomodasi</a>
+                    <a href="transportasi.html">Transportasi</a>
+                    <a href="galeri.html">Galeri</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Kontak</h3>
+                    <p>Email: info@wisatamedan.com</p>
+                    <p>Telepon: +62 61 1234567</p>
+                    <p>Alamat: Jl. Perintis Kemerdekaan, Medan</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Wisata Medan. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        // Filter Functionality
+        const filterSelects = document.querySelectorAll('.filter-select');
+        const hotelCards = document.querySelectorAll('.hotel-card');
+        const searchInput = document.querySelector('.search-input');
+        const searchBtn = document.querySelector('.search-btn');
+
+        function filterHotels() {
+            const tipe = document.getElementById('tipe').value;
+            const bintang = document.getElementById('bintang').value;
+            const harga = document.getElementById('harga').value;
+            const lokasi = document.getElementById('lokasi').value;
+            const searchTerm = searchInput.value.toLowerCase();
+
+            hotelCards.forEach(card => {
+                const cardTipe = card.dataset.tipe;
+                const cardBintang = card.dataset.bintang;
+                const cardHarga = card.dataset.harga;
+                const cardLokasi = card.dataset.lokasi;
+                const cardTitle = card.querySelector('h3').textContent.toLowerCase();
+
+                const tipeMatch = tipe === 'semua' || cardTipe === tipe;
+                const bintangMatch = bintang === 'semua' || cardBintang === bintang;
+                const hargaMatch = harga === 'semua' || cardHarga === harga;
+                const lokasiMatch = lokasi === 'semua' || cardLokasi === lokasi;
+                const searchMatch = cardTitle.includes(searchTerm);
+
+                if (tipeMatch && bintangMatch && hargaMatch && lokasiMatch && searchMatch) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Event listeners for filters
+        filterSelects.forEach(select => {
+            select.addEventListener('change', filterHotels);
+        });
+
+        searchBtn.addEventListener('click', filterHotels);
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') filterHotels();
+        });
+
+        // Favorite Button
+        const favoriteBtns = document.querySelectorAll('.favorite-btn');
+        favoriteBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const icon = this.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.replace('far', 'fas');
+                    icon.style.color = '#e74c3c';
+                } else {
+                    icon.classList.replace('fas', 'far');
+                    icon.style.color = '';
+                }
+            });
+        });
+
+        // Pagination
+        const pageBtns = document.querySelectorAll('.page-btn');
+        pageBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                pageBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
